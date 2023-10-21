@@ -8,10 +8,9 @@ Notes:
 2. The weights of each word are randomly generated at first. Then updated by backpropagation.
 ![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/beb20816-9407-4081-a8b1-36a8112646e6)
 
-
 ### Positional Encoding
 Word position comes from Sine and Cosine squiggles.
-
+![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/835ba892-7d29-40d9-8e51-d04e1a2d8712)
 
 ### Self-Attention
 #### Encoder
@@ -24,10 +23,13 @@ For each word, the encoding steps follow:
 5. Calculate *Value* for each word using positional encoded numbers
 6. Scale Values using SotMax similarities and add them together to get the Self-Attention values for one word (the word generates Query)
 
+
 The Self-Attention values contain similarities between one word and the other words.\
-Notes:\
+Notes:
 1. Weights ($W_q, W_k, W_v$)for all words in the input sequence are the same.
 2. Transformer can calculate Q,K,V for each word at the same time. (parallel computing)
+
+![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/43777879-0ad5-4ec1-b0d7-b64490782bc6)
 
 
 
