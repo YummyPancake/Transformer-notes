@@ -83,4 +83,5 @@ from step 5-10, we are calculating the Encoder-Decoder Attention values.\
 1. layer normalization
 2. use other methods to calculate similarities in attention layers.
    for example, you can scale the dot-product:
-   $similarity=/frac{1}{2}$
+   ![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/608da859-a00b-4c76-b7f4-b072e71221fb)
+3. add some additional hidden layers to both encoder and decoder.
