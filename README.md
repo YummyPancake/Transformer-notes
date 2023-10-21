@@ -29,13 +29,32 @@ Notes:
 1. Weights ($W_q, W_k, W_v$)for all words in the input sequence are the same.
 2. Transformer can calculate Q,K,V for each word at the same time. (parallel computing)
 
-![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/43777879-0ad5-4ec1-b0d7-b64490782bc6)
+![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/ae173a46-3709-4787-9c58-331827b7da8e)
 
+After calculating self-attention values of tokens, add the word and position encoded values to self-attention values to get the residual connection values.
 
+![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/dbbde7e6-150d-4f6d-81b5-937d0022e9c4)
 
 *Conclusion:* \
 Transformer encoder has 4 features:
 1. Word Embedding: encode words into numbers
-2. 
+2. Positional Encoding: encode the positions of the words
+3. Self-Attention: encode the relationships among the words
 
+#### Decoder
+1. word embedding
+   Create embedding values from the output vocabulary. eg. Spanish words.
+   Usually, we use the <EOS> token to start the decoding.
+ ![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/74c13519-b8be-4e51-89ab-bb21a7f0f9fb)
 
+2. positional encoding
+   use the same sine and cosine squiggles used when encoding the input.
+   ![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/77ef0515-18ba-400a-a8fc-12fb8a5529a0)
+
+3. calculate the self-attention values
+   Calculate the Query, Key, Value for the <EOS> token. Then calculate the Self-Attention values like before.
+   Note：The sets of weights ($W_q, W_k, W_v$) are different from weights in the Encoder.
+   ![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/6b39ebc0-e360-4952-8b37-835707c19717)
+
+4. add Residual Connections
+   
