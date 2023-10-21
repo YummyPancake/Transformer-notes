@@ -82,4 +82,5 @@ from step 5-10, we are calculating the Encoder-Decoder Attention values.\
 ### Something that you can add to transformer
 1. layer normalization
 2. use other methods to calculate similarities in attention layers.
-   for example, you can scale the dot-product: $ similarity=/frac{dot_product}{/sqrt(# embedding_values)}$
+   for example, you can scale the dot-product:
+   $similarity=/frac{1}{2}$
