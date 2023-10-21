@@ -6,6 +6,7 @@ To convert each word in a sequence to numbers. \
 Notes: 
 1. Each word uses the same word embedding framework.
 2. The weights of each word are randomly generated at first. Then updated by backpropagation.
+![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/beb20816-9407-4081-a8b1-36a8112646e6)
 
 
 ### Positional Encoding
