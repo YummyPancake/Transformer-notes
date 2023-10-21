@@ -8,8 +8,6 @@ Notes:
 2. The weights of each word are randomly generated at first. Then updated by backpropagation.
 ![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/0582fe22-115c-449d-9f41-415b1d8e8e1a)
 
-![image](https://github.com/YummyPancake/Transformer-notes/assets/50786300/f64c6588-9960-493e-86d0-102b2ccee723)
-
 
 ### Positional Encoding
 Word position comes from Sine and Cosine squiggles.
