@@ -7,3 +7,4 @@ https://www.youtube.com/watch?v=bQ5BoolX9Ag
    it uses a masked self-attention which only pays attention to the current word and the preceding words. 
    * To learn the way to calculate words similarities other than dot similarities, check the video cosine similarity
    * also check the video attention for neural networks
+   * And think about why use the softmax activation function?
